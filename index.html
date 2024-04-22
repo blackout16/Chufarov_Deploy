@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <body>
+        <header>
+            <div class="container">
+                <img class="logo" src="img/logo.png" alt="pic">
+                <div class="wrapper">
+                    <div class="offer">
+                        <h1 class="title">С помощь нас<br>
+                            вы сможете создать то, о чем</h1>
+                            <span class="title__span">желаете!</span>
+                            <p class="offer__text animate__animated animate__fadeInLeft animate__infinite">Наши возможности
+                            + опыт позволят вам достичь огромного
+                            успеха. Мы верим в вас! И знаем это на
+                            все 100%. Вас не остановить!</p>
+                            <a href="#" class="btn animate__animated animate__pulse animate__infinite">Узнать больше ...
+                            </a>
+                    </div>
+                    <img class="header__img" src="img/header-img.png" alt="pic">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2 class="main__title">Что вам необходимо?</h2>
+                <div class="main__block">
+                    <div class="blocks">
+                        <img src="img/f3.png" alt="pic">
+                        <h3>Первый блок</h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit</p>
+                    </div>
+                    <div class="blocks">
+                        <img src="img/f4.png" alt="pic">
+                        <h3>Второй блок</h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit?</p>
+                    </div>
+                    <div class="blocks">
+                        <img src="img/f5.png" alt="pic">
+                        <h3>Третий блок</h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <section class="registration-form">
+            <div class="form__container">
+                <h2 class="form__title">Форма регистрации</h2>
+                <form class="registration__fields" id="registrationForm">
+                    <div class="input-group">
+                        <label for="firstName">Имя:</label>
+                        <input id="firstName" name="firstName" type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="lastName">Фамилия:</label>
+                        <input id="lastName" name="lastName" type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="phoneNumber">Номер телефона:</label>
+                        <input id="phoneNumber" name="phoneNumber" >
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail:</label>
+                        <input id="email" name="email" >
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Пароль:</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Дата рождения:</label>
+                        <input id="dob" name="dob" type="date">
+                    </div>
+                    <button type="submit" class="btn btn--register">Подтвердить регистрацию</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="form">
+            <div class="form__container">
+                <h2 class="form__title">Форма заказа обратного звонка</h2>
+                <form class="form__fields" action="#" method="post">
+                    <input type="text" name="name" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё\s]{2,}">
+                    <input type="email" name="email" placeholder="Введите свой E-mail" required>
+                    <input type="tel" name="phone" placeholder="Телефон" required pattern="[0-9]{11}" title="Введите 11 цифр без пробелов и разделителей например, 890000050400">
+                    <input type="text" name="topic" placeholder="Какая тема вас интересует?" required>
+                    <button type="submit" class="btn btn--submit">Отравить вопрос!</button>
+                </form>
+            </div>        
+        </section>
+        
+
+        <section class="down">
+            <p>&copy;Все на этом сайте защищено</p>
+        </section>
+
+    <script src="js/valid.js"></script>
+    </body>
+    </html>
+</body>
+</html>

@@ -1,0 +1,334 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    background: linear-gradient(rgba(0,212,255,1) 0%, rgba(70,70,221) 100%, rgba(2,0,36,1) 100%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+.logo {
+    padding-bottom: 10px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white
+}
+.offer {
+    width: 500px;
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.title strong {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold; 
+}
+.title__span {
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.offer__text {
+    font-size: 14px;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.btn {
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif; 
+    text-decoration: none;
+    background-color: rgb(233, 186, 46);
+    transition: all 0.5;
+}
+.btn:hover {
+    background-color: rgb(249, 194, 31);
+    box-shadow: 10px 10px 10px grey;
+}
+.header__img {
+    width: 450px;
+    animation: logoAnimation 3s ease-in-out infinite;
+}
+.main {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.main__title {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif; 
+    text-align: center;
+    margin-bottom: 60px;
+    animation: titleAnimation 1s ease-out infinite;
+}
+.main__block {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+.blocks {
+    text-align: center;
+    font-size: 14px;
+    width: 25%;
+}
+.blocks *:not(h3) {
+    color: rgb(178, 173, 190); 
+}
+.blocks img {
+    margin-bottom: 30px;
+}
+.form {
+    background-color: rgb(236,243,248);
+    height: 470px;
+}
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.form__title {
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif; 
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.form__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 265px;
+}
+.form__fields input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+.form__fields input::placeholder {
+    padding-left: 5px; 
+}
+.form__fields button {
+    width: 258px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif; 
+    text-decoration: none;
+    background-color: rgb(233, 186, 46);
+    transition: all 0.5;
+}
+.form__fields button:hover {
+    background-color: rgb(249, 194, 31);
+    box-shadow: 10px 10px 10px grey;
+}
+.down {
+    background: linear-gradient(rgb(37, 102, 175) 10%, rgb(77, 77, 238) 50%, rgba(35,126,203,1) 100%, rgba(118,180,229,1) 100%);
+    color: white;
+    text-align: center;
+    height: 85px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+.down p {
+    font-size: 14px;
+}
+@keyframes logoAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.registration-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.registration__fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.btn--register {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--register:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 80%; 
+    }
+    .form__fields {
+        width: 70%;
+    }
+    .form__fields input,
+    .form__fields button {
+    width: 90%;
+    }
+    .offer {
+    width: 100%;
+    margin-top: 40px;
+    }
+    .offer {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .header__img {
+        width: 58%;
+        margin-top: 20px;
+    }
+    .main__block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 210px;
+        padding-top: 210px;
+    }
+    .main__title {
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        width: 80%; 
+    }
+    .form__fields {
+        width: 70%;
+    }
+    .form__fields input,
+    .form__fields button {
+    width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%; 
+    }
+    .form__fields {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        width: 80%; 
+    }
+
+    .form__fields {
+        width: 80%;
+    }
+    
+    .offer__text {
+        width: 70%
+    }
+
+    .form__title {
+        width: 60%
+    }
+
+    .title__span {
+        width: 60%
+    }
+
+    .title {
+        width: 75%;
+    }
+
+    .btn {
+        width: 60%;
+    }
+    .btn--register {
+        width: 100%;
+    }
+    .main__block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 250px;
+        padding-top: 250px;
+    }
+    .main__title {
+        margin-top: 0px;
+        padding-bottom: 50px;
+    }
+    .blocks p {
+        padding-bottom: 5px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .main__block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 260px;
+        padding-top: 275px;
+    }
+}
